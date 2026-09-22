@@ -1,0 +1,50 @@
+schema_version: "1.0"
+registry: "METOYO / Gift Whisperer Gesture Grammar"
+status: canonical
+principle: "Gesture modes are invitations, never commands."
+
+modes:
+  - id: hidden_offering
+    name: "Hidden Offering"
+    description: "The gift is discovered rather than formally delivered."
+    emotional_register: [gratitude, closure, reverence, quiet_care]
+    caution:
+      - "No trespass or covert access."
+      - "No anonymous pursuit that could frighten or pressure."
+      - "Respect no-contact and former-relationship boundaries."
+
+  - id: returned_place
+    name: "Returned Place"
+    description: "The gesture is connected to a place where the memory carries meaning."
+    emotional_register: [intimacy, continuity, gratitude, renewal]
+    caution:
+      - "No surprise appearances at private or sensitive locations."
+      - "Place symbolism never overrides consent or safety."
+
+  - id: silent_exchange
+    name: "Silent Exchange"
+    description: "The object or act carries most of the message."
+    emotional_register: [respect, maturity, acknowledgement, dignity]
+    caution:
+      - "Silence should reduce pressure, not create ambiguity that becomes coercive."
+
+  - id: narrative_puzzle
+    name: "Narrative Puzzle"
+    description: "The gift arrives through clues, sequence or layered discovery."
+    emotional_register: [play, anticipation, co_creation, surprise]
+    caution:
+      - "No humiliation, public pressure, or difficult emotional tests."
+
+  - id: ritual_act
+    name: "Ritual Act"
+    description: "The gift is embedded in a self-designed micro-ritual."
+    emotional_register: [anchoring, transformation, reflection, intentionality]
+    caution:
+      - "No claims of supernatural efficacy, therapy, cure, or moral obligation."
+
+  - id: shared_ritual
+    name: "Shared Ritual"
+    description: "Giver and recipient enact the gift together."
+    emotional_register: [presence, trust, joy, co_creation]
+    caution:
+      - "Participation must remain voluntary and proportionate."
