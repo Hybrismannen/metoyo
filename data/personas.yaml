@@ -1,0 +1,165 @@
+schema_version: "1.0"
+registry: "METOYO / Gift Whisperer Persona Canon"
+status: canonical
+principle: "Personas are relational archetypes, not demographic or psychological profiles."
+
+personas:
+  - id: mother
+    name: "The Mother"
+    constellation: care_tending
+    core_function: "Origin of care and nourishing presence"
+    tone: [reverent, grounding, soft]
+    gesture_modes: [silent_exchange, hidden_offering]
+    boundary_notes: "Avoid universal assumptions about motherhood, family closeness, or biological relation."
+
+  - id: father
+    name: "The Father"
+    constellation: care_tending
+    core_function: "Structure, support, loyalty that may be under-spoken"
+    tone: [quiet, grateful, strong]
+    gesture_modes: [silent_exchange, hidden_offering]
+    boundary_notes: "Do not presume emotional distance or reconciliation needs."
+
+  - id: sibling
+    name: "The Sibling"
+    constellation: care_tending
+    core_function: "Shared history, mirroring, chaos and survival"
+    tone: [wry, tribal, honest]
+    gesture_modes: [narrative_puzzle, shared_ritual]
+    boundary_notes: "Sibling relationships may be estranged, traumatic or culturally structured in different ways."
+
+  - id: caregiver
+    name: "The Caregiver"
+    constellation: care_tending
+    core_function: "A person who showed up in a period of need"
+    tone: [subtle, humble, witnessing]
+    gesture_modes: [silent_exchange, hidden_offering]
+    boundary_notes: "Respect professional boundaries where care was provided in a formal role."
+
+  - id: self
+    name: "The Self"
+    constellation: care_tending
+    core_function: "Self-recognition, self-repair and inward ritual"
+    tone: [gentle, forgiving, empowering]
+    gesture_modes: [ritual_act, hidden_offering]
+    boundary_notes: "Do not imply therapy, diagnosis, or cure."
+
+  - id: neighbor
+    name: "The Neighbor"
+    constellation: circumstantial
+    core_function: "Proximity, background allyship and everyday care"
+    tone: [warm, observational, quiet]
+    gesture_modes: [hidden_offering, silent_exchange]
+    boundary_notes: "Respect domestic boundaries and avoid uninvited entry."
+
+  - id: stranger_who_helped
+    name: "The Stranger Who Helped"
+    constellation: circumstantial
+    core_function: "Brief but meaningful intervention"
+    tone: [delicate, grateful, hushed]
+    gesture_modes: [hidden_offering]
+    boundary_notes: "Do not encourage locating or contacting someone who has not invited future contact."
+
+  - id: colleague
+    name: "The Colleague"
+    constellation: circumstantial
+    core_function: "Shared labor and daily rhythm"
+    tone: [respectful, neutral, light]
+    gesture_modes: [silent_exchange, shared_ritual]
+    boundary_notes: "Maintain workplace appropriateness and hierarchy awareness."
+
+  - id: boss
+    name: "The Boss"
+    constellation: circumstantial
+    core_function: "Authority relation with calibrated recognition"
+    tone: [earnest, boundary_aware, cool]
+    gesture_modes: [silent_exchange]
+    boundary_notes: "Avoid gifts that create obligation, favoritism concerns, or policy conflicts."
+
+  - id: group
+    name: "The Group"
+    constellation: circumstantial
+    core_function: "Collective rhythm and shared identity"
+    tone: [celebratory, communal, lively]
+    gesture_modes: [narrative_puzzle, shared_ritual]
+    boundary_notes: "Avoid excluding members or exposing private group dynamics."
+
+  - id: romantic_other
+    name: "The Romantic Other"
+    constellation: intimacy_emotion
+    core_function: "Longing, intimacy and chosen vulnerability"
+    tone: [tender, magnetic, risk_aware]
+    gesture_modes: [returned_place, narrative_puzzle, shared_ritual]
+    boundary_notes: "Consent and proportionality are critical; never infer reciprocity."
+
+  - id: ex
+    name: "The Ex"
+    constellation: intimacy_emotion
+    core_function: "A relationship transformed by separation"
+    tone: [bittersweet, grateful, mature]
+    gesture_modes: [hidden_offering]
+    boundary_notes: "High-boundary persona. No unwanted contact, anonymous pursuit, reconciliation pressure, or surprise visits."
+
+  - id: friend
+    name: "The Friend"
+    constellation: intimacy_emotion
+    core_function: "Chosen witness to a life"
+    tone: [loyal, joyful, complex]
+    gesture_modes: [narrative_puzzle, shared_ritual]
+    boundary_notes: "Do not over-romanticize friendship or infer intimacy beyond the user's description."
+
+  - id: child
+    name: "The Child"
+    constellation: intimacy_emotion
+    core_function: "Care, wonder, growth and inherited future"
+    tone: [proud, soft, receptive]
+    gesture_modes: [narrative_puzzle, shared_ritual]
+    boundary_notes: "Age-appropriate, guardian-aware and non-exploitative design is mandatory."
+
+  - id: muse
+    name: "The Muse"
+    constellation: intimacy_emotion
+    core_function: "Catalyst for art, imagination or longing"
+    tone: [wordless, charged, surreal]
+    gesture_modes: [ritual_act, returned_place]
+    boundary_notes: "Do not convert idealization into claims about the other person's intentions."
+
+  - id: mentor
+    name: "The Mentor"
+    constellation: transformational
+    core_function: "Guidance that enabled growth"
+    tone: [grateful, reflective, anchored]
+    gesture_modes: [returned_place, silent_exchange]
+    boundary_notes: "Respect professional/institutional boundaries."
+
+  - id: lifechanger
+    name: "The Lifechanger"
+    constellation: transformational
+    core_function: "Person associated with a decisive shift"
+    tone: [sacred, electric, precise]
+    gesture_modes: [returned_place, hidden_offering]
+    boundary_notes: "Avoid overstating causal debt or creating emotional obligation."
+
+  - id: hero
+    name: "The Hero"
+    constellation: transformational
+    core_function: "Model of courage, capacity or possibility"
+    tone: [reverent, expansive, inspired]
+    gesture_modes: [silent_exchange, ritual_act]
+    boundary_notes: "Avoid parasocial entitlement or invasive contact."
+
+  - id: future_you
+    name: "The Future You"
+    constellation: philosophical
+    core_function: "The self approached as a future relational other"
+    tone: [speculative, soft, sincere]
+    gesture_modes: [ritual_act]
+    boundary_notes: "Avoid deterministic self-optimization or therapeutic claims."
+
+  - id: unknown
+    name: "The Unknown"
+    constellation: philosophical
+    core_function: "Projected kindness without established relationship"
+    tone: [curious, open, symbolic]
+    gesture_modes: [hidden_offering, shared_ritual]
+    boundary_notes: "Respect anonymity, safety, public-space norms and non-intrusion."
