@@ -1,0 +1,80 @@
+schema_version: "1.0"
+name: "METOYO Trident"
+status: canonical
+
+input:
+  memory_cluster:
+    type: array
+    required: true
+    suggested_items: "3-5"
+    retention: ephemeral
+  persona:
+    type: string
+    required: true
+  giver_place:
+    type: string
+    required: false
+    precision: coarse_by_default
+    retention: ephemeral
+  recipient_place:
+    type: string
+    required: false
+    precision: coarse_by_default
+    retention: ephemeral
+  symbolic_origin:
+    type: string
+    required: false
+    retention: ephemeral
+  tone:
+    type: string
+    required: false
+  constraints:
+    type: object
+    required: false
+
+output:
+  gift:
+    required: true
+    fields:
+      concept: {type: string, required: true}
+      symbolic_link: {type: string, required: true}
+      adaptation: {type: string, required: false}
+
+  source:
+    required: true
+    fields:
+      route: {type: string, required: true}
+      provenance: {type: string, required: false}
+      localize_option: {type: string, required: false}
+      diy_option: {type: string, required: false}
+
+  ritual:
+    required: true
+    fields:
+      mode: {type: string, required: true}
+      tone: {type: string, required: true}
+      setting: {type: string, required: false}
+      timing: {type: string, required: false}
+      delivery: {type: string, required: true}
+      optional_words: {type: string, required: false}
+      boundary_note: {type: string, required: false}
+
+  reflection_invite:
+    required: false
+    fields:
+      enabled: {type: boolean, required: true}
+      prompt: {type: string, required: false}
+      persistence: {type: string, enum: [none, user_selected], required: true}
+
+policy:
+  must_not:
+    - "infer recipient psychology as fact"
+    - "create hidden relationship profiles"
+    - "pressure reconciliation, forgiveness, intimacy, or disclosure"
+    - "override consent or safety with ritual language"
+    - "convert source routing into undisclosed affiliate optimization"
+  must:
+    - "preserve user judgment"
+    - "allow adaptation or rejection"
+    - "treat user memory as primary context"
+    - "minimize data"
