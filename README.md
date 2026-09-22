@@ -82,8 +82,14 @@ METOYO is not intended to be a marketplace, wishlist engine, CRM, behavioral adv
 - [Technical architecture](docs/08-technical-architecture.md)
 - [Strategy, roadmap and evaluation](docs/09-strategy-roadmap-evaluation.md)
 - [Collaboration, funding and sourcing](docs/10-collaboration-funding-sourcing.md)
+- [Pius lineage and system boundary](docs/11-pius-lineage.md)
+- [Editorial and source protocol](docs/12-editorial-source-protocol.md)
+- [Design language](docs/13-design-language.md)
+- [Canonical decision ledger](DECISIONS.md)
+- [Repository status dashboard](PROJECT_STATUS.md)
 - [History and provenance](HISTORY.md)
 - [Source inventory](SOURCE_INDEX.md)
+- [Historical source extracts](archive/source-extracts/)
 
 ### Machine-readable system assets
 - [Persona registry](data/personas.yaml)
