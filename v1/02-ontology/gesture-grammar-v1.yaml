@@ -1,0 +1,33 @@
+schema_version: "1.0-design"
+status: "SOURCE_STABLE"
+
+modes:
+  - id: hidden_offering
+    label: "Hidden Offering"
+    function: "A gift is discovered without performance pressure."
+    forbid: [trespass, stalking, unsafe_hidden_placement]
+  - id: returned_place
+    label: "Returned Place"
+    function: "A place or place-memory becomes part of the gesture."
+    forbid: [unwanted_location_tracking, private_property_intrusion]
+  - id: silent_exchange
+    label: "Silent Exchange"
+    function: "Meaning is carried with minimal explanatory language."
+    forbid: [ambiguous_threat, anonymous_harassment]
+  - id: narrative_puzzle
+    label: "Narrative Puzzle"
+    function: "The recipient encounters a light interpretive trail."
+    forbid: [deception_with_material_consequence, pressure, humiliation]
+  - id: ritual_act
+    label: "Ritual Act"
+    function: "A deliberate action gives the offering its form."
+    forbid: [coercion, public_pressure, unsafe_act]
+  - id: shared_ritual
+    label: "Shared Ritual"
+    function: "The giver and recipient enact something together."
+    forbid: [surprise_obligation, consent_assumption, unwanted_contact]
+
+global_rule:
+  - "the_recipient_is_never_part_of_staging_without_consent"
+  - "ritual_may_be_quiet_or_ordinary"
+  - "presentation_never_overrides_recipient_autonomy"
