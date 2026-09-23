@@ -1,0 +1,58 @@
+schema_version: "1.0-design"
+status: "SOURCE_STABLE_CORE_WITH_DESIGN_GUARDRAILS"
+
+request:
+  required:
+    persona_id: string
+    memory_fragments:
+      type: array
+      items: string
+      min_items: 1
+  optional:
+    tone: string
+    budget_band: string
+    time_available: string
+    diy_openness: string
+    giver_place: string
+    recipient_region: string
+    symbolic_origin: string
+    refinement_mode: string
+
+response:
+  required:
+    gift:
+      title: string
+      form: string
+      meaning: string
+    source:
+      route_type: string
+      guidance: string
+    ritual:
+      mode_id: string
+      action: string
+      wording: string
+    rationale:
+      memory_links:
+        type: array
+        items: string
+    safety:
+      status: enum[clear, reframed]
+  optional:
+    alternatives:
+      type: array
+    spatial_provenance_phrase: string
+
+validation:
+  must:
+    - "all_three_trident_arms_present"
+    - "gift_is_traceable_to_memory_not_generic_catalogue"
+    - "source_is_actionable_without_becoming_affiliate_ranking"
+    - "ritual_respects_recipient_autonomy"
+    - "uncertainty_is_not_presented_as_psychological_fact"
+  must_not:
+    - "invent_recipient_preferences"
+    - "infer_sensitive_traits"
+    - "encourage_trespass_or_stalking"
+    - "circumvent_no_contact"
+    - "pressure_public_disclosure"
+    - "use_urgency_or_shame"

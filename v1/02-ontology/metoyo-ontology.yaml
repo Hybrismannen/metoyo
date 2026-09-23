@@ -1,0 +1,61 @@
+schema_version: "1.0-design"
+status: "DESIGN_CANDIDATE"
+
+entities:
+  metoyo:
+    kind: ritual_space
+    public_facing: true
+    definition: "The public-facing condition and interface in which memory becomes gesture."
+  gift_whisperer:
+    kind: orchestration_engine
+    public_facing: false
+    definition: "Internal execution logic that transforms relational memory into a Trident proposal."
+  memory_cluster:
+    kind: ephemeral_input
+    recommended_fragments: "3-5"
+    profile: false
+  persona:
+    kind: relational_role
+    demographic_segment: false
+  trident:
+    kind: output_contract
+    arms: [gift, source, ritual]
+  gesture_grammar:
+    kind: presentation_mode
+  spatial_memory:
+    kind: optional_context
+  reflection:
+    kind: optional_post_ritual
+    required: false
+
+core_flow:
+  - arrival
+  - persona
+  - memory_cluster
+  - optional_context
+  - gift_whisperer
+  - trident
+  - human_judgment
+  - gesture
+  - optional_reflection
+
+invariants:
+  - "memory_precedes_object"
+  - "relationship_informs_logic"
+  - "gesture_completes_meaning"
+  - "human_judgment_is_final"
+  - "core_use_requires_no_account"
+  - "recipient_is_not_a_behavioral_profile"
+  - "persistence_is_opt_in"
+  - "reflection_is_optional"
+  - "spatial_context_is_optional"
+  - "system_disappearance_is_compatible_with_success"
+
+forbidden_product_roles:
+  - marketplace
+  - affiliate_feed
+  - relationship_crm
+  - therapy
+  - diagnosis
+  - behavioral_ad_targeting
+  - engagement_streak_system

@@ -1,0 +1,26 @@
+schema_version: "1.0-design"
+status: "SOURCE_STABLE_CORE"
+
+inputs:
+  giver_place:
+    required: false
+    precision: coarse
+    purpose: "practical context and nearby access"
+  recipient_region:
+    required: false
+    precision: coarse
+    purpose: "cultural/accessibility context"
+  symbolic_origin:
+    required: false
+    precision: symbolic_or_coarse
+    purpose: "place as meaning, independent of delivery"
+
+rules:
+  - "never_require_exact_address_for_ideation"
+  - "do_not_persist_location_by_default"
+  - "do_not_infer_recipient_location_from_other_data"
+  - "symbolic_origin_is_not_delivery_address"
+  - "location_must_not_be_used_to_identify_or_track_a_person"
+
+fallback:
+  when_absent: "universal_or_DIY_source_guidance"
