@@ -1,0 +1,85 @@
+schema_version: "1.0-design"
+status: "DESIGN_CANDIDATE"
+runtime_rule: "persona_id is canonical for execution; constellation must not alter prompt logic while its source conflict remains unresolved"
+
+personas:
+  - id: mother
+    label: "The Mother"
+    constellation: care_and_tending
+  - id: father
+    label: "The Father"
+    constellation: care_and_tending
+  - id: sibling
+    label: "The Sibling"
+    constellation: care_and_tending
+  - id: caregiver
+    label: "The Caregiver"
+    constellation: care_and_tending
+  - id: self
+    label: "The Self"
+    constellation: unresolved
+    source_candidates: [care_and_tending, transformational]
+    decision_gate: HD-001
+
+  - id: neighbor
+    label: "The Neighbor"
+    constellation: circumstantial
+  - id: stranger_who_helped
+    label: "The Stranger Who Helped"
+    constellation: circumstantial
+  - id: colleague
+    label: "The Colleague"
+    constellation: circumstantial
+  - id: boss
+    label: "The Boss"
+    constellation: unresolved
+    source_candidates: [circumstantial, care_and_tending]
+    decision_gate: HD-001
+  - id: group
+    label: "The Group"
+    constellation: circumstantial
+
+  - id: romantic_other
+    label: "The Romantic Other"
+    constellation: intimacy_and_emotion
+  - id: ex
+    label: "The Ex"
+    constellation: intimacy_and_emotion
+  - id: friend
+    label: "The Friend"
+    constellation: intimacy_and_emotion
+  - id: child
+    label: "The Child"
+    constellation: intimacy_and_emotion
+  - id: muse
+    label: "The Muse"
+    constellation: unresolved
+    source_candidates: [transformational, intimacy_and_emotion]
+    decision_gate: HD-001
+
+  - id: mentor
+    label: "The Mentor"
+    constellation: transformational
+  - id: lifechanger
+    label: "The Lifechanger"
+    constellation: transformational
+  - id: hero
+    label: "The Hero"
+    constellation: transformational
+
+  - id: future_you
+    label: "Future You"
+    constellation: philosophical
+  - id: unknown
+    label: "The Unknown"
+    constellation: philosophical
+
+boundary_profiles:
+  ex:
+    avoid: [no_contact_circumvention, pressure, surprise_intrusion]
+  child:
+    avoid: [adultification, sensitive_disclosure_pressure, unsafe_meetup]
+  boss:
+    avoid: [coercive_intimacy, quid_pro_quo, workplace_pressure]
+  stranger_who_helped:
+    avoid: [tracking, location_inference, unwanted_contact]
