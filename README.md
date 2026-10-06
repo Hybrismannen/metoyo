@@ -144,3 +144,21 @@ This distinction is architectural, not cosmetic.
 ## Current repository objective
 
 This repository is being converted from an empty container into a complete, intelligible METOYO system record. The priority is **coherence before code**: all future implementation should be able to trace a feature back to the ritual model, ethical constraints, and source provenance documented here.
+
+---
+
+## Public provenance
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/Hybrismannen/form-flode-dna/main/assets/form-flode-logo.png" alt="Form & Flöde" width="120">
+</p>
+
+**METOYO is an autonomous public project stewarded by Form & Flöde.** The METOYO identity remains primary; the Form & Flöde mark records stewardship and development provenance.
+
+Public provenance is governed by the **FFC Public Provenance Standard v1.0**.
+
+### Support continued development
+
+METOYO has a non-commercial, commons-oriented prototype lineage. If the project is useful to you, you can support continued independent development and stewardship through Form & Flöde.
+
+**[Support continued development →](https://paypal.me/djlifehack)**
